@@ -1,0 +1,114 @@
+body {
+    background-image: url(backgroud.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0px;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 4rem;
+}
+
+.voorpagina {
+    display: flex;
+    flex-direction: column;
+    width: 25vw;
+    justify-content: space-between;
+    margin-left: 65rem;
+    margin-top: 0rem;
+    padding-top: 4rem;
+}
+
+.introductie {
+    width: 20vw;
+    margin-left: 10rem;
+    color: rgb(255, 255, 255);
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    height: 4rem;
+    flex-direction: row;
+    background-color: rgba(32, 30, 27, 0.575);
+    list-style: none;
+    position: sticky;
+    top: 0;
+}
+
+.index {
+    display: flex;
+    justify-content: space-around;
+    width: 100vw;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+}
+
+ul {
+    list-style: none;
+}
+
+.bl1 {
+    height: 100vh;
+    background-image: url(achtergrond.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+}
+
+.titel1 {
+    text-align: center;
+}
+
+.bl2 {
+    height: 100vh;
+    background-image: url(projecten.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+
+.bl3 {
+    height: 100vh;
+    background-image: url(opleiding.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: rgb(48, 9, 9);
+}
+
+.bl4 {
+    height: 100vh;
+}
+
+.projecttekst {
+    display: flex;
+    width: 25rem;
+    text-align: right;
+    margin-left: 69rem;
+}
+
+.opleidingentekst {
+    display: flex;
+    width: 30rem;
+    text-align: center;
+    margin-left: 32rem;
+    margin-top: 10rem;
+}
+
+.titel2 {
+    text-align: center;
+}
+
+img {
+    opacity: 1;
+}
+
+.overigetekst {
+    display: flex;
+    width: 
+}
