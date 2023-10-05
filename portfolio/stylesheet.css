@@ -90,14 +90,12 @@ ul {
     display: flex;
     width: 25rem;
     text-align: right;
-    margin-left: 69rem;
 }
 
 .opleidingentekst {
     display: flex;
     width: 30rem;
     text-align: center;
-    margin-left: 32rem;
     margin-top: 10rem;
 }
 
@@ -112,4 +110,8 @@ img {
 .overigetekst {
     display: flex;
     width: 
+}
+.container1{
+    display: flex;
+    flex-direction: column;
 }
