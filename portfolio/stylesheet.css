@@ -26,12 +26,17 @@ html {
     color: rgb(255, 255, 255);
 }
 
+.introtekst {
+    color: #0fdb64;
+    font-family: sans-serif;
+}
+
 nav {
     display: flex;
     justify-content: space-around;
     height: 4rem;
     flex-direction: row;
-    background-color: rgba(32, 30, 27, 0.575);
+    background-color: rgba(35, 29, 53, 0.58);
     list-style: none;
     position: sticky;
     top: 0;
@@ -45,8 +50,9 @@ nav {
 
 a {
     text-decoration: none;
-    color: white;
+    color: #fff;
     padding: 20px;
+    transition: 500ms
 }
 
 ul {
@@ -88,6 +94,19 @@ ul {
     background-size: cover;
 }
 
+.github {
+    display: flex;
+    flex-direction: row;
+    color: #fff;
+    width: 15rem;
+    margin-top: 4rem;
+    text-align: center;
+}
+
+.git {
+    color: purple;
+}
+
 .projecttekst {
     display: flex;
     align-items: end;
@@ -111,6 +130,8 @@ ul {
 
 .titel3 {
     color: #fff;
+    display: flex;
+    justify-content: center;
 }
 
 img {
@@ -229,6 +250,7 @@ img {
 .containertalen {
     display: flex;
     flex-direction: column;
+    margin-left: 3rem;
 }
 
 .talen {
@@ -251,6 +273,7 @@ img {
     background: #cddc39;
     animation: engels 1s linear forwards;
 }
+
 .Nederlands span {
     border: 1px solid #e91e63;
 }
@@ -258,6 +281,7 @@ img {
 .engels span {
     border: 1px solid #cddc39;
 }
+
 @keyframes Nederlands {
     100% {
         width: 90%;
@@ -268,4 +292,8 @@ img {
     100% {
         width: 84%;
     }
+}
+
+p {
+    font-family: sans-serif;
 }
