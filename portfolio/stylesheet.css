@@ -135,12 +135,13 @@ img {
 
 .programeertalen {
     border: 2px solid;
-    height: 20vh;
+    height: 23vh;
     width: 25vw;
     background: #222;
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 2rem;
 }
 
 .skills h2 {
@@ -227,6 +228,7 @@ img {
 
 .containertalen {
     display: flex;
+    flex-direction: column;
 }
 
 .talen {
@@ -237,6 +239,7 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 5rem;
 }
 
 .Nederlands {
