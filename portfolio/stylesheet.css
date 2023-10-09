@@ -7,7 +7,7 @@ body {
 
 html {
     scroll-behavior: smooth;
-    scroll-padding-top: 4rem;
+    scroll-padding-top: 6.6rem;
 }
 
 .voorpagina {
@@ -21,14 +21,16 @@ html {
 }
 
 .introductie {
-    width: 20vw;
+    font-size: xx-large;
     margin-left: 10rem;
-    color: rgb(255, 255, 255);
+    color: rgb(212, 0, 255);
 }
 
 .introtekst {
     color: #0fdb64;
     font-family: sans-serif;
+    width: 20vw;
+    font-size: medium;
 }
 
 nav {
@@ -64,11 +66,12 @@ ul {
     background-image: url(achtergrond.png);
     background-repeat: no-repeat;
     background-size: cover;
-    width: 100vw;
+    width: 99.18vw;
 }
 
 .titel1 {
     text-align: center;
+    font-size: xx-large;
 }
 
 .bl2 {
@@ -105,15 +108,20 @@ ul {
 
 .git {
     color: purple;
+    margin-left: -1.2rem;
+    margin-right: -1rem;
+    text-decoration: underline;
 }
 
 .projecttekst {
     display: flex;
     align-items: end;
-    width: 25rem;
-    text-align: right;
+    width: 40vw;
+    text-align: center;
     float: right;
     margin-right: 2rem;
+    color: #00ff80;
+    flex-direction: column;
 }
 
 .opleidingentekst {
@@ -122,16 +130,30 @@ ul {
     text-align: center;
     margin: auto;
     margin-top: 10rem;
+    color: rgb(59, 51, 51);
+    font-size: larger;
+}
+
+.diploma{
+    width: 30vw;
+    height: 30vh;
+    display: flex;
+    position: absolute;
+    transform: rotate(90deg);
+    margin: 8rem 5rem;
+    opacity: 0.8;
 }
 
 .titel2 {
     text-align: center;
+    font-size: xx-large;
 }
 
 .titel3 {
-    color: #fff;
+    color: #4135eb;
     display: flex;
     justify-content: center;
+    font-size: xx-large;
 }
 
 img {
@@ -140,9 +162,10 @@ img {
 
 .overigetekst {
     display: flex;
-    width: 50rem;
-    margin: auto;
-    color: #fff;
+    width: 30vw;
+    margin-left: 3rem;
+    color: #0c72d1;
+    justify-content: start;
 }
 
 .rechts {
@@ -251,6 +274,7 @@ img {
     display: flex;
     flex-direction: column;
     margin-left: 3rem;
+    position: absolute;
 }
 
 .talen {
@@ -296,4 +320,23 @@ img {
 
 p {
     font-family: sans-serif;
+}
+
+.code1 {
+    width: 30vw;
+    height: 30vh;
+    opacity: 0; /* dit is totdat ik foto's van andere projecten hier kan toevoegen */
+}
+
+.code2 {
+    width: 30vw;
+    height: 30vh;
+    margin-top: 3rem;
+    opacity: 0; /* dit is totdat ik foto's van andere projecten hier kan toevoegen */
+}
+
+.projectfotos {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
 }
