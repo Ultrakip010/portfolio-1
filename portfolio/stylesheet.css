@@ -134,14 +134,32 @@ ul {
     font-size: larger;
 }
 
-.diploma{
+.mavodiploma{
     width: 30vw;
     height: 30vh;
     display: flex;
     position: absolute;
     transform: rotate(90deg);
     margin: 8rem 5rem;
-    opacity: 0.8;
+    opacity: 0.87;
+    margin-right: 75rem;
+}
+
+.mbodiploma{
+    width: 30vw;
+    height: 30vh;
+    display: flex;
+    position: absolute;
+    transform: rotate(90deg);
+    margin: 8rem 5rem;
+    opacity: 0;
+    margin-left: 75rem;
+}
+
+.diplomas{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
 
 .titel2 {
