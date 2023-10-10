@@ -38,7 +38,7 @@ nav {
     justify-content: space-around;
     height: 4rem;
     flex-direction: row;
-    background-color: rgba(35, 29, 53, 0.58);
+    background-color: rgba(35, 29, 53, 1);
     list-style: none;
     position: sticky;
     top: 0;
@@ -62,7 +62,7 @@ ul {
 }
 
 .bl1 {
-    height: 100vh;
+    height: 94.3vh;
     background-image: url(achtergrond.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -75,7 +75,7 @@ ul {
 }
 
 .bl2 {
-    height: 100vh;
+    height: 94.3vh;
     background-image: url(projecten.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -83,7 +83,7 @@ ul {
 }
 
 .bl3 {
-    height: 100vh;
+    height: 94.3vh;
     background-image: url(opleiding.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -91,7 +91,7 @@ ul {
 }
 
 .bl4 {
-    height: 100vh;
+    height: 94.3vh;
     background-image: url(overige.png);
     background-repeat: no-repeat;
     background-size: cover;
