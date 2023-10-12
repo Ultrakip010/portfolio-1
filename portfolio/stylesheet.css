@@ -343,14 +343,18 @@ p {
 .code1 {
     width: 30vw;
     height: 30vh;
-    opacity: 0; /* dit is totdat ik foto's van andere projecten hier kan toevoegen */
+    margin-left: 9rem;
+    rotate: calc(26deg);
+    opacity: 1; /* dit is totdat ik foto's van andere projecten hier kan toevoegen */
 }
 
 .code2 {
     width: 30vw;
     height: 30vh;
-    margin-top: 3rem;
-    opacity: 0; /* dit is totdat ik foto's van andere projecten hier kan toevoegen */
+    margin-top: 5rem;
+    margin-left: 15rem;
+    rotate: calc(-20deg);
+    opacity: 1; /* dit is totdat ik foto's van andere projecten hier kan toevoegen */
 }
 
 .projectfotos {
