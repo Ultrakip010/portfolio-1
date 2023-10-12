@@ -134,7 +134,7 @@ ul {
     font-size: larger;
 }
 
-.mavodiploma{
+.mavodiploma {
     width: 30vw;
     height: 30vh;
     display: flex;
@@ -145,7 +145,7 @@ ul {
     margin-right: 75rem;
 }
 
-.mbodiploma{
+.mbodiploma {
     width: 30vw;
     height: 30vh;
     display: flex;
@@ -156,7 +156,7 @@ ul {
     margin-left: 75rem;
 }
 
-.diplomas{
+.diplomas {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -347,7 +347,8 @@ p {
     margin-left: 9rem;
     margin-top: 12rem;
     rotate: calc(26deg);
-    opacity: 1; /* dit is totdat ik foto's van andere projecten hier kan toevoegen */
+    opacity: 1;
+    /* dit is totdat ik foto's van andere projecten hier kan toevoegen */
 }
 
 .code2 {
@@ -357,7 +358,8 @@ p {
     margin-top: 1rem;
     margin-left: 15rem;
     rotate: calc(-14deg);
-    opacity: 1; /* dit is totdat ik foto's van andere projecten hier kan toevoegen */
+    opacity: 1;
+    /* dit is totdat ik foto's van andere projecten hier kan toevoegen */
 }
 
 .projectfotos {
@@ -366,9 +368,97 @@ p {
     flex-direction: column;
 }
 
-.projectfotos{
+.projectfotos {
     display: flex;
     align-items: center;
     height: 93.7vh;
     margin-top: -10rem;
+}
+
+.opleidingen {
+    height: 50vh;
+    width: 50vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    rotate: calc(90deg);
+    margin-top: 10rem;
+    margin-left: -5rem;
+}
+
+.opleiding h2 {
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin-top: -30px;
+    margin-bottom: px;
+    color: #fff;
+    font-size: 2rem;
+    rotate: calc(-90deg);
+}
+
+.progress-bar-opleiding {
+    background: #959595;
+    width: 40vw;
+    height: 10px;
+    border-radius: 5px;
+}
+
+.progress-bar-opleiding div {
+    height: 10px;
+    border-radius: 5px;
+    width: 0%;
+
+}
+
+.progress-bar-opleiding div span {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background: #6e22d1;
+    float: right;
+    margin-top: -10px;
+    margin-right: -20px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.opleidingpijl1 {
+    position: absolute;
+    background: #e91e63;
+    animation: opleidingpijl1 0.6956s linear forwards;
+}
+
+.opleidingpijl2 {
+    position: absolute;
+    background: #e91e63;
+    animation: opleidingpijl2 1.8s linear forwards;
+}
+
+.opleidingpijl3 {
+    position: absolute;
+    background: #e91e63;
+    animation: opleidingpijl3 4s linear forwards;
+}
+
+/* tijd in seconden = opleidingpijl3% / 100 x keyframe%.
+nu = (opleidingpijl3% / 100 x keyframe%) - 3 */
+
+@keyframes opleidingpijl1 {
+    100% {
+        width: 17.39%;
+    }
+}
+
+@keyframes opleidingpijl2 {
+    100% {
+        width: 45.78%;
+    }
+}
+
+@keyframes opleidingpijl3 {
+    100% {
+        width: 80%;
+    }
 }
