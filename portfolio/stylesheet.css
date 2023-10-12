@@ -341,15 +341,17 @@ p {
 }
 
 .code1 {
+    display: flex;
     width: 30vw;
     height: 30vh;
     margin-left: 9rem;
-    margin-top: -3rem;
+    margin-top: 12rem;
     rotate: calc(26deg);
     opacity: 1; /* dit is totdat ik foto's van andere projecten hier kan toevoegen */
 }
 
 .code2 {
+    display: flex;
     width: 30vw;
     height: 30vh;
     margin-top: 1rem;
@@ -362,4 +364,11 @@ p {
     display: flex;
     position: absolute;
     flex-direction: column;
+}
+
+.projectfotos{
+    display: flex;
+    align-items: center;
+    height: 93.7vh;
+    margin-top: -10rem;
 }
