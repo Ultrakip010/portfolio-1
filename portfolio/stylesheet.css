@@ -344,6 +344,7 @@ p {
     width: 30vw;
     height: 30vh;
     margin-left: 9rem;
+    margin-top: -3rem;
     rotate: calc(26deg);
     opacity: 1; /* dit is totdat ik foto's van andere projecten hier kan toevoegen */
 }
@@ -351,9 +352,9 @@ p {
 .code2 {
     width: 30vw;
     height: 30vh;
-    margin-top: 5rem;
+    margin-top: 1rem;
     margin-left: 15rem;
-    rotate: calc(-20deg);
+    rotate: calc(-14deg);
     opacity: 1; /* dit is totdat ik foto's van andere projecten hier kan toevoegen */
 }
 
