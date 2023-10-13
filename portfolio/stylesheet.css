@@ -284,7 +284,7 @@ img {
 
 @keyframes javascript {
     100% {
-        width: 5%;
+        width: 10%;
     }
 }
 
@@ -375,90 +375,121 @@ p {
     margin-top: -10rem;
 }
 
-.opleidingen {
-    height: 50vh;
-    width: 50vw;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    rotate: calc(90deg);
-    margin-top: 10rem;
-    margin-left: -5rem;
+.containeropleiding{
+    margin-left: 2rem;
 }
 
-.opleiding h2 {
-    font-weight: 400;
-    letter-spacing: 1px;
-    margin-top: -30px;
-    margin-bottom: px;
-    color: #fff;
-    font-size: 2rem;
-    rotate: calc(-90deg);
+.wrapper {
+    width: 330px;
+    font-family: 'Helvetica';
+    font-size: 1.3rem;
+    position: absolute;
 }
 
-.progress-bar-opleiding {
-    background: #959595;
-    width: 40vw;
-    height: 10px;
-    border-radius: 5px;
+.StepProgress {
+    position: relative;
+    padding-left: 45px;
+    list-style: none;
 }
 
-.progress-bar-opleiding div {
-    height: 10px;
-    border-radius: 5px;
-    width: 0%;
-
+.StepProgress::before {
+    display: inline-block;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 15px;
+    width: 10px;
+    height: 100%;
 }
 
-.progress-bar-opleiding div span {
-    height: 30px;
-    width: 30px;
+.StepProgress-item {
+    position: relative;
+    counter-increment: list;
+}
+
+.StepProgress-item:not(:last-child) {
+    padding-bottom: 20px;
+}
+
+.StepProgress-item::before {
+    display: inline-block;
+    content: '';
+    position: absolute;
+    left: -30px;
+    height: 100%;
+    width: 10px;
+}
+
+.StepProgress-item::after {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: -37px;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #CCC;
     border-radius: 50%;
-    background: #6e22d1;
-    float: right;
-    margin-top: -10px;
-    margin-right: -20px;
-    color: #fff;
+    background-color: #FFF;
+}
+
+.StepProgress-item.is-done::before {
+    border-left: 2px solid green;
+}
+
+.StepProgress-item.is-done::after {
+    content: "✔";
+    font-size: 13px;
+    color: #FFF;
+    text-align: center;
+    border: 2px solid green;
+    background-color: green;
+}
+
+.StepProgress-item.current::before {
+    border-left: 2px solid green;
+}
+
+.StepProgress-item.current::after {
+    content: counter(list);
+    padding-top: 1px;
+    width: 25px;
+    height: 25px;
+    top: -4px;
+    left: -40px;
+    font-size: 14px;
+    text-align: center;
+    color: green;
+    border: 2px solid green;
+    background-color: white;
+}
+
+.StepProgress strong {
+    display: block;
+}
+
+.thorbecke{
     display: flex;
-    align-items: center;
-    justify-content: center;
+    height: 21vh;
+    width: 21vw;
+    margin-top: 4rem;
 }
 
-.opleidingpijl1 {
-    position: absolute;
-    background: #e91e63;
-    animation: opleidingpijl1 0.6956s linear forwards;
+.passe-partout{
+    display: flex;
+    height: 21vh;
+    width: 21vw;
 }
 
-.opleidingpijl2 {
-    position: absolute;
-    background: #e91e63;
-    animation: opleidingpijl2 1.8s linear forwards;
+.TCR{
+    display: flex;
+    height: 21vh;
+    width: 21vw;
+    margin-top: 4rem;
 }
-
-.opleidingpijl3 {
-    position: absolute;
-    background: #e91e63;
-    animation: opleidingpijl3 4s linear forwards;
-}
-
-/* tijd in seconden = opleidingpijl3% / 100 x keyframe%.
-nu = (opleidingpijl3% / 100 x keyframe%) - 3 */
-
-@keyframes opleidingpijl1 {
-    100% {
-        width: 17.39%;
-    }
-}
-
-@keyframes opleidingpijl2 {
-    100% {
-        width: 45.78%;
-    }
-}
-
-@keyframes opleidingpijl3 {
-    100% {
-        width: 80%;
-    }
+.fotoscholen{
+    display: flex;
+    flex-direction: column;
+    float: right;
+    margin-right: 20rem;
 }
