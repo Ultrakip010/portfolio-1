@@ -173,7 +173,7 @@ ul {
 }
 
 .titel3 {
-    color: #4135eb;
+    color: yellow;
     display: flex;
     justify-content: center;
     font-size: xx-large;
@@ -187,7 +187,7 @@ img {
     display: flex;
     width: 25vw;
     margin-left: 3rem;
-    color: #0c72d1;
+    color: yellow;
     justify-content: start;
 }
 
