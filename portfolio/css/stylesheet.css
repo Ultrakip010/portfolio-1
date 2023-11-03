@@ -1,4 +1,4 @@
-body{
+body {
     margin: 0;
 }
 
@@ -25,11 +25,11 @@ body{
     font-size: medium;
 }
 
-p{
+p {
     font-size: large;
 }
 
-li{
+li {
     font-size: large;
 }
 
@@ -85,7 +85,7 @@ ul {
 }
 
 .bl3 {
-    height: 94.3vh;
+    height: 91.6vh;
     background-image: url(opleiding.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -386,7 +386,7 @@ p {
 }
 
 .wrapper {
-    width: 330px;
+    width: 500px;
     font-family: 'Helvetica';
     font-size: 1.3rem;
     position: absolute;
@@ -463,7 +463,7 @@ p {
     height: 25px;
     top: -4px;
     left: -40px;
-    font-size: 14px;
+    font-size: 9px;
     text-align: center;
     color: green;
     border: 2px solid green;
@@ -478,7 +478,7 @@ p {
     display: flex;
     height: 21vh;
     width: 21vw;
-    margin-top: 4rem;
+    margin-top: 2.4rem;
 }
 
 .passe-partout {
@@ -491,7 +491,7 @@ p {
     display: flex;
     height: 21vh;
     width: 21vw;
-    margin-top: 4rem;
+    margin-top: 2.4rem;
 }
 
 .fotoscholen {
@@ -501,15 +501,40 @@ p {
     margin-right: 20rem;
 }
 
-.titelinter{
+.titelinter {
     text-align: center;
     font-size: xx-large;
 }
 
-.bl5{
-    background-image: url(interview.jpg);
+.bl5 {
     height: 91.5vh;
     background-repeat: no-repeat;
-    background-size: cover;
     margin-top: -2.7rem;
+    background-color:rgb(8, 91, 180);
+    background-image: url(interview.jpg);
+    background-size: cover;
+}
+
+.interviewqa {
+    width: 80vw;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    margin-left: 10rem;
+    margin-top: -1.7rem;
+}
+
+.Q {
+    display: flex;
+    float: left;
+    margin-top: -1px;
+    color: #eeff00;
+}
+
+.A {
+    display: flex;
+    float: right;
+    justify-content: end;
+    margin-top: -1px;
+    color: rgb(0, 255, 21);
 }
