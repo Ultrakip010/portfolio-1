@@ -18,6 +18,29 @@ body {
     color: rgb(212, 0, 255);
 }
 
+@media screen and (max-width: 768px) {
+    .container1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .video-container {
+        width: 100%;
+        height: 0;
+        padding-bottom: 56.25%;
+        position: relative;
+    }
+
+    .video-container iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+}
+
 .introtekst {
     color: #0fdb64;
     font-family: sans-serif;
@@ -68,6 +91,7 @@ ul {
     background-size: cover;
     width: 100vw;
     margin: 0px;
+    max-height: 92.3vh;
 }
 
 .titel1 {
@@ -456,7 +480,8 @@ p {
     border-left: 2px solid green;
 }
 
-.StepProgress-item.current::after { /* current step */
+.StepProgress-item.current::after {
+    /* current step */
     content: counter(list);
     padding-top: 1px;
     width: 25px;
@@ -510,7 +535,7 @@ p {
     height: 91.5vh;
     background-repeat: no-repeat;
     margin-top: -2.7rem;
-    background-color:rgb(8, 91, 180);
+    background-color: rgb(8, 91, 180);
     background-image: url(interview.jpg);
     background-size: cover;
 }
@@ -553,22 +578,25 @@ p {
 @keyframes fadeIn {
     0% {
         opacity: 0;
-        transform: translateY(-20px); /* move element 20px up */
+        transform: translateY(-20px);
+        /* move element 20px up */
     }
+
     100% {
         opacity: 1;
-        transform: translateY(0); /* move element to its original position */
+        transform: translateY(0);
+        /* move element to its original position */
     }
 }
 
 .video-container {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: -9rem;
-    margin-bottom: 2rem;
+    justify-content: flex-end;
+    align-items: flex-start;
+    margin-bottom: 10rem;
+    margin-right: 17rem;
+    margin-top: -26rem; /* Adjust the margin-top value to move the video higher */
 }
-
 .namen {
     color: purple;
 }
@@ -582,27 +610,36 @@ p {
     padding: 20px;
     animation: fadeIn 1s ease-in-out;
     margin-left: -3rem;
-    background-color: #1c4fbd; /* Set a nice background color */
-    width: 80%; /* Center the form and make it wider if needed */
-    margin: 0 auto; /* Center the form horizontally */
+    background-color: #1c4fbd;
+    /* Set a nice background color */
+    width: 80%;
+    /* Center the form and make it wider if needed */
+    margin: 0 auto;
+    /* Center the form horizontally */
 }
 
 .contactform input {
-    margin-right: 10px; /* Add margin-right to create space between input fields */
+    margin-right: 10px;
+    /* Add margin-right to create space between input fields */
 }
 
 .contactform textarea {
-    resize: none; /* Disable resizing of the textarea */
-    height: 16px; /* Set the height of the textarea */
+    resize: none;
+    /* Disable resizing of the textarea */
+    height: 16px;
+    /* Set the height of the textarea */
 }
 
 @keyframes fadeIn {
     0% {
         opacity: 0;
-        transform: translateY(-20px); /* move element 20px up */
+        transform: translateY(-20px);
+        /* move element 20px up */
     }
+
     100% {
         opacity: 1;
-        transform: translateY(0); /* move element to its original position */
+        transform: translateY(0);
+        /* move element to its original position */
     }
 }
