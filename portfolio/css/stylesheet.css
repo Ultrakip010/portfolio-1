@@ -456,7 +456,7 @@ p {
     border-left: 2px solid green;
 }
 
-.StepProgress-item.current::after {
+.StepProgress-item.current::after { /* current step */
     content: counter(list);
     padding-top: 1px;
     width: 25px;
@@ -537,4 +537,72 @@ p {
     justify-content: end;
     margin-top: -1px;
     color: rgb(0, 255, 21);
+}
+
+.formuliercijfers {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 34vh;
+    border-radius: 10px;
+    padding: 20px;
+    animation: fadeIn 1s ease-in-out;
+    margin-left: -3rem;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px); /* move element 20px up */
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0); /* move element to its original position */
+    }
+}
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -9rem;
+    margin-bottom: 2rem;
+}
+
+.namen {
+    color: purple;
+}
+
+.contactform {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 34vh;
+    border-radius: 10px;
+    padding: 20px;
+    animation: fadeIn 1s ease-in-out;
+    margin-left: -3rem;
+    background-color: #1c4fbd; /* Set a nice background color */
+    width: 80%; /* Center the form and make it wider if needed */
+    margin: 0 auto; /* Center the form horizontally */
+}
+
+.contactform input {
+    margin-right: 10px; /* Add margin-right to create space between input fields */
+}
+
+.contactform textarea {
+    resize: none; /* Disable resizing of the textarea */
+    height: 16px; /* Set the height of the textarea */
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px); /* move element 20px up */
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0); /* move element to its original position */
+    }
 }
